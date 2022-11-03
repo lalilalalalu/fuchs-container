@@ -20,6 +20,6 @@ Stage0 += shell(commands=[
 Stage0 += environment(variables={'PATH': '/opt/spack/bin:/opt/view:$PATH', 'SPACK_ROOT': '/opt/spack'})
 
 Stage0 += shell(commands=[
-    'echo ". /opt/spack/share/spack/setup-env.sh" >> /load-spack-env.sh',
-    'echo "spack env activate /opt/spack-env" >> /load-spack-env.sh'
+    'echo ". /opt/spack/share/spack/setup-env.sh" > /load-spack-env.sh',
+    'echo "spack env activate /opt/spack-env" > /load-spack-env.sh'
 ])
